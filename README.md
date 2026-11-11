@@ -5,7 +5,6 @@ Analysis code for: A single-nucleus transcriptomic atlas of the adult macaque ra
 Analysis code for:
 
 **A single-nucleus transcriptomic atlas of the dorsal and median raphe regions in adult macaques**
-<img width="807" height="767" alt="image" src="https://github.com/user-attachments/assets/f340be03-520d-482e-a072-6e9b10408ab8" />
 
 This repository contains selected analysis code associated with the adult cynomolgus macaque raphe single-nucleus RNA sequencing (snRNA-seq) dataset. The repository includes code for:
 
