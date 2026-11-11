@@ -5,6 +5,7 @@ Analysis code for: A single-nucleus transcriptomic atlas of the adult macaque ra
 Analysis code for:
 
 **A single-nucleus transcriptomic atlas of the dorsal and median raphe regions in adult macaques**
+<img width="807" height="767" alt="image" src="https://github.com/user-attachments/assets/f340be03-520d-482e-a072-6e9b10408ab8" />
 
 This repository contains selected analysis code associated with the adult cynomolgus macaque raphe single-nucleus RNA sequencing (snRNA-seq) dataset. The repository includes code for:
 
@@ -14,7 +15,7 @@ This repository contains selected analysis code associated with the adult cynomo
 
 The repository does not currently contain the complete raw-read processing, quality-control, doublet-detection, major-class annotation, or cell-type annotation pipeline. These procedures are described in the manuscript, and the corresponding processed matrices, Seurat objects, and metadata are provided through the accompanying data deposition.
 
-The final curated dataset comprises 140,674 nuclei from two adult male cynomolgus macaques, Mq246 and Mq277, across 15 technical libraries. It includes seven major cell classes and 43 putative transcriptional cell types, including 14 serotonergic cell types represented by 3,696 nuclei.
+The final curated dataset comprises 140,674 nuclei from two adult male cynomolgus macaques, Mq246 and Mq277, across 15 technical libraries. It includes seven major cell classes and 57 putative transcriptional cell types, including 14 serotonergic cell types represented by 3,696 nuclei.
 
 The 15 libraries were generated from separate aliquots of animal-specific pooled nuclei suspensions and therefore represent technical libraries rather than independent biological replicates or anatomically distinct samples.
 
@@ -288,7 +289,7 @@ The figure correspondence should be updated if the final figure-generation code 
 - `only.pos`: FALSE
 - `logfc.threshold`: 0.25
 - `min.pct`: 0.25
-- Retained marker genes: adjusted P < 0.05 and avg_log2FC > 1
+- Retained marker genes: adjusted P < 0.01 and avg_log2FC > 1
 
 No explicit random seed is currently set at the beginning of this script. This should be considered when reproducing stochastic clustering and UMAP outputs.
 
@@ -330,7 +331,7 @@ The notebook also contains exploratory analyses using alternative variable-featu
 - `only.pos`: TRUE
 - `min.pct`: 0.1
 - `logfc.threshold`: 1
-- Retained markers: adjusted P < 0.05 and avg_log2FC > 1
+- Retained markers: adjusted P < 0.01 and avg_log2FC > 1
 - Marker lists were pooled within each species, and duplicate gene names were removed before comparison
 
 The resulting overlap describes genes shared between the pooled marker lists. It does not establish cell-type-specific marker conservation or species-specific expression.
