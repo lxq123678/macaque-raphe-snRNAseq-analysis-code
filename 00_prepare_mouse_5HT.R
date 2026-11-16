@@ -58,11 +58,11 @@ top5 <- sig_genes %>%
   top_n(n = 5, wt = avg_log2FC)
 DotPlot(sce, features =unique(top5$gene),
         group.by = "seurat_clusters",
-        cols = c("lightgrey", "#E64B35FF"),  # 颜色梯度：灰→红
-        dot.scale = 6,                       # 点大小缩放因子
+        cols = c("lightgrey", "#E64B35FF"),  
+        dot.scale = 6,                      
         scale = TRUE) +RotatedAxis()+
   theme(
-    axis.text.x = element_text(size = 10),  # X轴标签垂直
+    axis.text.x = element_text(size = 10), 
   )
 merged@meta.data$renew_type <- paste0("5-HT",'_',as.numeric(as.character(merged@meta.data$seurat_clusters)) + 1)
 
