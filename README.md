@@ -288,7 +288,7 @@ The figure correspondence should be updated if the final figure-generation code 
 - `only.pos`: FALSE
 - `logfc.threshold`: 0.25
 - `min.pct`: 0.25
-- Retained marker genes: adjusted P < 0.01 and avg_log2FC > 1
+- Retained marker genes: adjusted P < 0.05 and avg_log2FC > 1
 
 No explicit random seed is currently set at the beginning of this script. This should be considered when reproducing stochastic clustering and UMAP outputs.
 
