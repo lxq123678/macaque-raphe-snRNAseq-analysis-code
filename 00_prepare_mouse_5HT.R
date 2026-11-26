@@ -83,7 +83,7 @@ DotPlot(sce, features =unique(top5$gene),
         dot.scale = 6,                      
         scale = TRUE) +RotatedAxis()+
   theme(
-    axis.text.x = element_text(size = 10),  
+    axis.text.x = element_text(size = 10)
   )
   # ---- 17. Create a new metadata column for cluster labels
 merged@meta.data$renew_type <- paste0("5-HT",'_',as.numeric(as.character(merged@meta.data$seurat_clusters)) + 1)
